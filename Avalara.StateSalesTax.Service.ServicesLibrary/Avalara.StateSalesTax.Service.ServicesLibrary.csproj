@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Avalara.StateSalesTax.Data.Dtos\Avalara.StateSalesTax.Data.Dtos.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Data.EntityFramework\Avalara.StateSalesTax.Data.EntityFramework.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Domain.DomainEntities\Avalara.StateSalesTax.Domain.DomainEntities.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Service.Contracts\Avalara.StateSalesTax.Service.Contracts.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Service.Factories\Avalara.StateSalesTax.Service.Factories.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\..\..\..\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\5.0.0\ref\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

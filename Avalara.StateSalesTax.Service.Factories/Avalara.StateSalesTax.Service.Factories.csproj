@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Avalara.StateSalesTax.Data.Dtos\Avalara.StateSalesTax.Data.Dtos.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Data.EntityFramework\Avalara.StateSalesTax.Data.EntityFramework.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Domain.Constants\Avalara.StateSalesTax.Domain.Constants.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Domain.DomainEntities\Avalara.StateSalesTax.Domain.DomainEntities.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Service.Contracts\Avalara.StateSalesTax.Service.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

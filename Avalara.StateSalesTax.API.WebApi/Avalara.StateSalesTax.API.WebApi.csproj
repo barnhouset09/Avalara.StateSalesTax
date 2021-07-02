@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>bin\net5.0\bin\Avalara.StateSalesTax.API.WebApi.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Avalara.StateSalesTax.Domain.DomainEntities\Avalara.StateSalesTax.Domain.DomainEntities.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Service.Factories\Avalara.StateSalesTax.Service.Factories.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Service.ServicesLibrary\Avalara.StateSalesTax.Service.ServicesLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

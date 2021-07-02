@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Avalara.StateSalesTax.Data.Dtos\Avalara.StateSalesTax.Data.Dtos.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Data.EntityFramework\Avalara.StateSalesTax.Data.EntityFramework.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Domain.Constants\Avalara.StateSalesTax.Domain.Constants.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Domain.DomainEntities\Avalara.StateSalesTax.Domain.DomainEntities.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Service.Contracts\Avalara.StateSalesTax.Service.Contracts.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Service.Factories\Avalara.StateSalesTax.Service.Factories.csproj" />
+    <ProjectReference Include="..\Avalara.StateSalesTax.Service.ServicesLibrary\Avalara.StateSalesTax.Service.ServicesLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
